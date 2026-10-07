@@ -3,268 +3,239 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#08090d">
-    <meta name="description" content="Attendly — simple attendance tracking for Greek students.">
-    <title>Attendly — Attendance, simplified.</title>
-    <link rel="stylesheet" href="style.css">
+
+    <meta name="theme-color" content="#09090b">
+    <meta name="description" content="Attendly — a simple Android attendance tracker for students.">
+
+    <title>Attendly — Attendance, made simple.</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
 
-<div class="background">
-    <div class="orb orb-1"></div>
-    <div class="orb orb-2"></div>
-    <div class="grid"></div>
-</div>
-
-<header>
-    <a class="brand" href="#">
-        <div class="brand-icon">A</div>
-        <span>Attendly</span>
-    </a>
-
-    <a
-        class="github-link"
-        href="https://github.com/MrDimos1234/Attendly"
-        target="_blank"
-        rel="noopener"
-    >
-        GitHub
-        <span>↗</span>
-    </a>
-</header>
-
-<main>
-
-<section class="hero">
-
-    <div class="eyebrow">
-        <span class="status-dot"></span>
-        Built for Android
-    </div>
-
-    <h1>
-        Attendance,<br>
-        <span>simplified.</span>
-    </h1>
-
-    <p class="hero-text">
-        Keep your school absences organized, know where you stand,
-        and stay on top of your attendance.
-    </p>
-
-    <div class="hero-actions">
-        <a href="Attendly.apk" class="download-btn" id="downloadBtn">
-            <span class="download-icon">↓</span>
-            <span>Download for Android</span>
+    <nav class="navbar">
+        <a href="./" class="logo">
+            <span class="logo-mark">A</span>
+            <span>Attendly</span>
         </a>
 
-        <a href="#features" class="secondary-btn">
-            Explore Attendly
-            <span>↓</span>
+        <a
+            class="github"
+            href="https://github.com/MrDimos1234/Attendly"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            GitHub ↗
         </a>
-    </div>
-
-    <div class="release">
-        <span>Latest release</span>
-        <span class="separator">•</span>
-        <span>Android APK</span>
-    </div>
-
-</section>
+    </nav>
 
 
-<section class="app-preview">
+    <main>
 
-    <div class="phone">
+        <section class="hero">
 
-        <div class="phone-top">
-            <span>9:41</span>
-            <div class="phone-status">
-                <span>●</span>
-                <span>▮▮▮</span>
-                <span>▰</span>
-            </div>
-        </div>
-
-        <div class="app-header">
-            <div>
-                <small>Good morning</small>
-                <strong>Attendly</strong>
+            <div class="badge">
+                <span class="badge-dot"></span>
+                Android app
             </div>
 
-            <div class="mini-avatar">A</div>
-        </div>
+            <h1>
+                Attendance,<br>
+                <span>made simple.</span>
+            </h1>
 
-        <div class="attendance-card">
-            <div class="card-label">UNJUSTIFIED</div>
-            <div class="attendance-number">17</div>
-
-            <div class="progress">
-                <div class="progress-fill"></div>
-            </div>
-
-            <div class="card-footer">
-                <span>Attendance</span>
-                <span>17 / 114</span>
-            </div>
-        </div>
-
-        <div class="mini-stats">
-            <div>
-                <span class="stat-icon purple">✓</span>
-                <small>Justified</small>
-                <strong>4</strong>
-            </div>
-
-            <div>
-                <span class="stat-icon blue">Σ</span>
-                <small>Total</small>
-                <strong>21</strong>
-            </div>
-        </div>
-
-        <div class="phone-section-title">
-            Recent absences
-        </div>
-
-        <div class="absence">
-            <div class="date-box">
-                <strong>07</strong>
-                <small>OCT</small>
-            </div>
-
-            <div class="absence-info">
-                <strong>Wednesday</strong>
-                <small>3 periods</small>
-            </div>
-
-            <span class="unjustified">Unjustified</span>
-        </div>
-
-        <div class="absence">
-            <div class="date-box">
-                <strong>05</strong>
-                <small>OCT</small>
-            </div>
-
-            <div class="absence-info">
-                <strong>Monday</strong>
-                <small>2 periods</small>
-            </div>
-
-            <span class="justified">Justified</span>
-        </div>
-
-        <div class="phone-nav">
-            <span class="active">⌂</span>
-            <span>▣</span>
-            <span>◷</span>
-            <span>⚙</span>
-        </div>
-
-    </div>
-
-    <div class="preview-glow"></div>
-
-</section>
-
-
-<section class="features" id="features">
-
-    <div class="section-heading">
-        <span class="eyebrow">Everything you need</span>
-        <h2>Stay in control.</h2>
-        <p>Designed to make attendance tracking quick and painless.</p>
-    </div>
-
-    <div class="feature-grid">
-
-        <article class="feature-card large">
-            <div class="feature-icon purple-icon">◈</div>
-            <h3>Clear dashboard</h3>
-            <p>
-                See your unjustified, justified and total absences
-                immediately when you open Attendly.
+            <p class="hero-text">
+                Keep track of your school absences, attendance and limits
+                without the hassle.
             </p>
 
-            <div class="fake-chart">
-                <span style="height: 35%"></span>
-                <span style="height: 55%"></span>
-                <span style="height: 42%"></span>
-                <span style="height: 72%"></span>
-                <span style="height: 60%"></span>
-                <span style="height: 88%"></span>
-                <span style="height: 70%"></span>
+            <div class="hero-actions">
+                <a class="download-button" href="./Attendly.apk" download>
+                    <span class="download-symbol">↓</span>
+                    <span>
+                        <small>Download for</small>
+                        Android
+                    </span>
+                </a>
+
+                <a class="secondary-button" href="#features">
+                    See features
+                </a>
             </div>
-        </article>
 
-        <article class="feature-card">
-            <div class="feature-icon blue-icon">◷</div>
-            <h3>Calendar</h3>
-            <p>Quickly see when your absences happened.</p>
-        </article>
+            <p class="download-note">
+                Free · Android · APK
+            </p>
 
-        <article class="feature-card">
-            <div class="feature-icon green-icon">✓</div>
-            <h3>Justification</h3>
-            <p>Mark absences as justified and keep everything organized.</p>
-        </article>
-
-        <article class="feature-card">
-            <div class="feature-icon orange-icon">↥</div>
-            <h3>Backup & restore</h3>
-            <p>Export your data and restore it whenever you need.</p>
-        </article>
-
-        <article class="feature-card">
-            <div class="feature-icon pink-icon">☷</div>
-            <h3>Timetable</h3>
-            <p>Configure your school schedule inside the app.</p>
-        </article>
-
-    </div>
-
-</section>
+        </section>
 
 
-<section class="cta">
+        <section class="app-preview">
 
-    <div class="cta-glow"></div>
+            <div class="preview-glow"></div>
 
-    <span class="eyebrow">Ready?</span>
+            <div class="phone">
 
-    <h2>Take control of<br><span>your attendance.</span></h2>
+                <div class="phone-top"></div>
 
-    <p>Download Attendly and keep everything in one place.</p>
+                <div class="app-screen">
 
-    <a href="Attendly.apk" class="download-btn">
-        <span class="download-icon">↓</span>
-        Download Attendly
-    </a>
+                    <div class="screen-header">
+                        <div>
+                            <p class="screen-label">ATTENDLY</p>
+                            <h2>My attendance</h2>
+                        </div>
 
-</section>
+                        <div class="profile">M</div>
+                    </div>
 
-</main>
+                    <div class="attendance-card">
+                        <div class="attendance-top">
+                            <span>Attendance</span>
+                            <strong>92%</strong>
+                        </div>
+
+                        <div class="progress">
+                            <div class="progress-fill"></div>
+                        </div>
+
+                        <div class="attendance-bottom">
+                            <span>8 absences</span>
+                            <span>100 allowed</span>
+                        </div>
+                    </div>
+
+                    <div class="screen-title">
+                        Recent absences
+                    </div>
+
+                    <div class="absence">
+                        <div class="absence-icon">M</div>
+                        <div>
+                            <strong>Mathematics</strong>
+                            <small>Today · 2 hours</small>
+                        </div>
+                        <span>2</span>
+                    </div>
+
+                    <div class="absence">
+                        <div class="absence-icon">P</div>
+                        <div>
+                            <strong>Programming</strong>
+                            <small>Yesterday · 1 hour</small>
+                        </div>
+                        <span>1</span>
+                    </div>
+
+                    <button class="fake-add">
+                        + Add absence
+                    </button>
+
+                </div>
+            </div>
+
+        </section>
 
 
-<footer>
-    <div class="footer-brand">
-        <div class="brand-icon">A</div>
-        <strong>Attendly</strong>
-    </div>
+        <section class="features" id="features">
 
-    <p>Attendance, simplified.</p>
+            <div class="section-heading">
+                <p class="eyebrow">WHY ATTENDLY</p>
+                <h2>Everything you need.<br>Nothing you don't.</h2>
+            </div>
 
-    <a
-        href="https://github.com/MrDimos1234/Attendly"
-        target="_blank"
-        rel="noopener"
-    >
-        GitHub ↗
-    </a>
-</footer>
+            <div class="feature-grid">
 
-<script src="script.js"></script>
+                <article class="feature">
+                    <div class="feature-icon">✓</div>
+                    <h3>Track absences</h3>
+                    <p>
+                        Quickly record absences and keep your attendance
+                        organized in one place.
+                    </p>
+                </article>
+
+                <article class="feature">
+                    <div class="feature-icon">◷</div>
+                    <h3>Know your limits</h3>
+                    <p>
+                        See how many absences you've used and how many
+                        you have left.
+                    </p>
+                </article>
+
+                <article class="feature">
+                    <div class="feature-icon">⌁</div>
+                    <h3>Simple by design</h3>
+                    <p>
+                        No accounts, no complicated setup and no unnecessary
+                        features getting in your way.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <section class="download-section">
+
+            <div class="download-card">
+
+                <div>
+                    <p class="eyebrow">GET ATTENDLY</p>
+
+                    <h2>
+                        Ready to take control
+                        of your attendance?
+                    </h2>
+
+                    <p>
+                        Download Attendly for Android and start tracking
+                        your attendance today.
+                    </p>
+                </div>
+
+                <a class="download-button large" href="./Attendly.apk" download>
+                    <span class="download-symbol">↓</span>
+                    <span>
+                        <small>Download</small>
+                        Attendly APK
+                    </span>
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <div class="logo">
+            <span class="logo-mark">A</span>
+            <span>Attendly</span>
+        </div>
+
+        <p>
+            Attendance tracking for students.
+        </p>
+
+        <a
+            href="https://github.com/MrDimos1234/Attendly"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            GitHub
+        </a>
+
+    </footer>
+
 </body>
 </html>
