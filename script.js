@@ -1,22 +1,35 @@
-const downloadButtons = [
-    document.getElementById("downloadBtn"),
-    document.getElementById("downloadBtn2")
-];
+const downloadButtons = document.querySelectorAll(".download-btn");
 
 downloadButtons.forEach(button => {
-    if (!button) return;
-
     button.addEventListener("click", () => {
-        button.classList.add("downloading");
+        const original = button.innerHTML;
+
+        button.innerHTML = `
+            <span class="download-icon">✓</span>
+            <span>Starting download...</span>
+        `;
 
         setTimeout(() => {
-            button.classList.remove("downloading");
-        }, 700);
+            button.innerHTML = original;
+        }, 1800);
     });
 });
 
-const version = document.getElementById("version");
+const observer = new IntersectionObserver(
+    entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = "1";
+                entry.target.style.transform = "translateY(0)";
+            }
+        });
+    },
+    { threshold: 0.12 }
+);
 
-if (version) {
-    version.textContent = "Latest Android release • APK";
-}
+document.querySelectorAll(".feature-card, .cta").forEach(element => {
+    element.style.opacity = "0";
+    element.style.transform = "translateY(20px)";
+    element.style.transition = "opacity .7s ease, transform .7s ease";
+    observer.observe(element);
+});
